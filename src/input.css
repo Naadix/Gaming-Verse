@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Base Style Start */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #f44336 #fdecea;
+    font-size: 16px;
+}
+
+/* ScrollBar : Chrome , Edge ; Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdecea;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f44336;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #db3c30;
+}
+
+
+body {
+    background:#0a0d14;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+a,
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a:active,
+button:active {
+    scale: 0.9;
+}
+/* Base Style End */
+
+/* Utilities Style Start */
+.my-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.my-text-shadow{
+    text-shadow: 0 0 3px #e06666;
+}
+.my-navbar{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.5s ease;
+}
+.my-navbar.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.my-navtoggle{
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+.my-navtoggle.active{
+    opacity:1;
+    visibility:visible;
+    transform:rotate(0);
+}
+.myopacity{
+    opacity: 0;
+}
+/* Utilities Style End */
