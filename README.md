@@ -4,6 +4,12 @@ A modern and responsive gaming landing page built with **Tailwind CSS (CLI)** an
 
 ---
 
+## 🖼️ Preview
+
+![Preview](https://github.com/Naadix/Gaming-Verse/blob/master/img/Game%20verse.png)
+
+---
+
 ## 🚀 Features
 
 - Fully responsive design
